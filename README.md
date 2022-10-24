@@ -3,7 +3,7 @@ This repository contains code to fully generate viewpoints and robot positions t
 ## PHASE 1
 ### Description
 The first phase resulst in a list of viewpoint (VP) candidates and their corresponing visible object surface (represented as voxels). The phase includes the following steps:
-- Initilization: load object model (e.g. mesh)
+- Initialization: load object model (e.g. mesh)
 - Step 1: Voxelize object model as ocupancy matrix. Extend the matrix as preparation for the dilation step.
 - Step 2: Generate viepoint sample space via binary dilation. Select random viewpoint candidates from the sample space. (10% recommended)
 - Step 3: Calculate object voxels that are within the "potential field" of the viewpoints. Use the voxels of the potential field to calculate mean viewing direction of the viepoints
