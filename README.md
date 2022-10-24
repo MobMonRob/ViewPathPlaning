@@ -31,7 +31,7 @@ The second phase uses the generated VP candidates and their corresponding visibl
 
 ### Input and configuration
 - inputPath (path to a phase 1 output file)
-- algorithms (need to be commented out, if they should not be applied)
+- algorithms (need to be commented out, if they should not be applied. Algorithm Paramters are set in file SCP_src)
 - outputPath (located at the end of the code, there the output will be saved)
 
 
@@ -58,7 +58,7 @@ The fourth phase uses the generated robot position candidates and their correspo
 ### Input and configuration
 - inputPath (path to a phase 3 output file)
 - vps_toUse (as there can be used multiple algorithms for the SCP of the VPs, it has to be decided with which SCP solution of VPs to work in this phase)
-- algorithms (need to be commented out, if they should not be applied)
+- algorithms (need to be commented out, if they should not be applied. Algorithm Paramters are set in file SCP_src)
 - outputPath (located at the end of the code, there the output will be saved)
 - 
 ## PHASE 5
