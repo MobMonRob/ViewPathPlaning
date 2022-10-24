@@ -37,11 +37,11 @@ The second phase uses the generated VP candidates and their corresponding visibl
 
 ## PHASE 3
 ### Description
-The third phase results in a list of robot position candidates and theri corresponding reachable VPs. The phase includes the following steps:
+The third phase results in a list of robot position candidates and their corresponding reachable VPs. The phase includes the following steps:
 - Step 1: Generate robot position sample space via binary dilation. Select random robot position candidates from the sample space. (10% recommended)
 - Step 2: Get robot positioning orientation. The robot should always be oriented pointing away from the object with its optical axis. Thus the scanner is alway viewing away from the object in start position. This is for accessiblity purposes of the scanner while setting up the new position and it prevents invalid positions e.g. with the robots base beside the object but its rotated in a manner that the arm is under the object.
 - Step 3: Calculate VP voxels that are within the "potential field" of the robots position. This is bassed on the working radius of the robot. As there could be VPs oriented in a manner that they are nevertheless reachable, this set is updated in the following step.
-- Step 4: Get the robots joint configurations to reach the assigned VPs. Only VPs in the potential field are used in terms of dimensionality reduction. VPs that are not reachable will be deleted form the assigned VPS of the position. The inverse kinematics always result in 8 configurations possible. A selection of the most suitable configuration is nt addresed. There will be always taken the first ut of the 8 configurations.
+- Step 4: Get the robots joint configurations to reach the assigned VPs. Only VPs in the potential field are used in terms of dimensionality reduction. VPs that are not reachable will be deleted form the assigned VPS of the position. The inverse kinematics always result in 8 configurations possible. A selection of the most suitable configuration is not addressed. There will be always taken the first out of the 8 configurations.
 
 ### Input and configuration
 - inputPath (path to a phase 2 output file)
@@ -53,7 +53,7 @@ The third phase results in a list of robot position candidates and theri corresp
 
 ## PHASE 4
 ### Description
-The fourth phase uses the generated robot position candidates and their corresponding reachable VPs as SCP. The least amount of nessesary robot positions need to be found that still cover all VPs. The implemented algorithms to solve the SCP are listet in Phase 2.
+The fourth phase uses the generated robot position candidates and their corresponding reachable VPs as SCP. The least amount of nessesary robot positions need to be found that still cover all VPs. The implemented algorithms to solve the SCP are listed in phase 2.
 
 ### Input and configuration
 - inputPath (path to a phase 3 output file)
