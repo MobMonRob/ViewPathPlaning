@@ -60,7 +60,7 @@ The fourth phase uses the generated robot position candidates and their correspo
 - vps_toUse (as there can be used multiple algorithms for the SCP of the VPs, it has to be decided with which SCP solution of VPs to work in this phase)
 - algorithms (need to be commented out, if they should not be applied. Algorithm Paramters are set in file SCP_src)
 - outputPath (located at the end of the code, there the output will be saved)
-- 
+
 ## PHASE 5
 ### Description
 The last phase determines the minimum cost sequences of the given robot positions. Moreover the assigned VPs per robot position are also put in a sequence. For the robot positions the distance between the coordinates is considered as cost. For the VPs the summed joint configuration change to get from one VP to the next is considerd as cost. The phase includes the following steps:
