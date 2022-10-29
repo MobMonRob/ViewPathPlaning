@@ -1,1 +1,27 @@
-temp
+PHASE 1
+- obj_mesh_path : 01_blade.stl
+- gridSize: 10 (mm)
+- obj_mesh_scale: 0.0034 # -> "0.0034" results in a blade model length of 1m 
+- number_of_vp_candidates_seed: 0.1 # -> 10 %
+- sampleSpace_extension: 1.5
+- ma_scale: 1
+
+PHASE 2
+- inputPath:  path to phase 1 output file
+- algorithms : only greedy
+
+PHASE 3
+- inputPath:  path to phase 2 output file
+- tm_rb_minRange: 30 cm
+- rbPos_quantity_seed: 1000
+- vps_toUse: greedy
+
+PHASE 4
+- inputPath:  path to phase 3 output file
+- vps_toUse: greedy
+- algorithms : only greedy
+
+PHASE 5
+- inputPath:  path to phase 4 output file
+- vps_toUse: greedy
+- rbPos_toUse: greedy
