@@ -103,3 +103,9 @@ The last phase determines the minimum cost sequences of the given robot position
 | six             | 1.16.0 |
 | threadpoolctl   | 3.1.0 |
 | trimesh         | 3.12.7 |
+# Simulation Environment (mujoco version 2.2.0)
+(1) The mujoco stand alone software is available here: https://mujoco.org/
+(2) The mujoco package for python is available here: https://github.com/deepmind/mujoco/releases
+To view the sample simulation environment (folder "samples/sim env/00_sample simulation env.xml") download mujoco stand alone (reference (1)) and open the folder "bin/simulate.exe". There you can drag and drop the XML-file to start the simuation.
+To do further simulation steps use the python package (reference (2)). The documentation how to use the package can be found here: https://mujoco.readthedocs.io/en/latest/python.html
+However a sample python file, that uses the Phase 5 outputfile to move the robot can be found in the "samples/sim env" folder.
